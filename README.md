@@ -4,13 +4,12 @@ This repository contains everything that is needed for "Google Cloud SpeedRun: R
 
 ## Links
 
-- [Credits Claim](http://trygcp.dev/e/event-id)
+- [Credits Claim](http://trygcp.dev/e/devfest-prague-2025) https://trygcp.dev/claim/devfest-prague-2025
 
 ## Useful commands
-- `git clone https://github.com/scaliby/deploying-ml-models-on-gke.git` - clones the repository
+- `git clone https://github.com/agnieszka95/deploying-gke-cluster-on-gcp.git` - clones the repository
 - `./00_setup/provision.sh` - runs projects provisioning
-- `./02_deployment/deploy.sh` - builds, pushes, and deploys on GKE
+- `./01_deployment/deployment.yaml` - GKE deployment
+- `kubectl touch -f deployment.yaml` - create deployment
 - `kubectl get pods` - lists pods on Kubernetes
-- `kubectl get deployment` - lists deployments on Kubernetes
-- `kubectl get svc` - lists services (can be used to retrieve LB IP) 
-- `kubectl get hpa` - lists HPA's
+- `kubectl get deployment` - lists deployments on Kubernetes 
