@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jvm
+  labels:
+    app: jvm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jvm
+  template:
+    metadata:
+      labels:
+        app: jvm
+    spec:
+      nodeSelector:
+        app-type: sensitive
+      containers:
+      - name: jvm
+        image: abielak95/devfest-gke:2.0
+        env:
+        - name: ALLOC_MB
+          value: "300"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
