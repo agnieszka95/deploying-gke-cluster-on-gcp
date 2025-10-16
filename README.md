@@ -8,6 +8,7 @@ This repository contains everything that is needed for "Google Cloud SpeedRun: R
 
 ## Useful commands
 - `git clone https://github.com/agnieszka95/deploying-gke-cluster-on-gcp.git` - clones the repository
+- `chmod +x ./deploying-gke-cluster-on-gcp/00_setup/provision.sh` - make file executable
 - `./00_setup/provision.sh` - runs projects provisioning
 - `./01_deployment/deployment.yaml` - GKE deployment
 - `kubectl touch -f deployment.yaml` - create deployment
