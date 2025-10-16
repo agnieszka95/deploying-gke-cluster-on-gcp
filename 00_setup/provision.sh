@@ -2,6 +2,11 @@
 
 #set -e
 
+PROJECT_ID="MY_PROJECT_ID"
+
+echo "Set Project ID"
+gcloud config set project $PROJECT_ID
+
 echo "Enabling container.googleapis.com"
 gcloud services enable container.googleapis.com
 
