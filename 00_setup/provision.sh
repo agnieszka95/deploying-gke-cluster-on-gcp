@@ -11,7 +11,7 @@ echo "Enabling container.googleapis.com"
 gcloud services enable container.googleapis.com
 
 echo "Creating cluster"
-gcloud container clusters workshop --location=us-central1
+gcloud container clusters create workshop --location=us-central1
 
 echo "Getting credentials for the cluster"
 gcloud container clusters get-credentials workshop --location=us-central1
