@@ -18,7 +18,7 @@ spec:
         app-type: sensitive
       containers:
       - name: jvm
-        image: abielak95/devfest-gke:2.0
+        image: abielak95/devfest-app:2.0
         env:
         - name: ALLOC_MB
           value: "300"
