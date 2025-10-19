@@ -17,4 +17,4 @@ echo "Creating cluster 'workshop' with 1 e2-micro node in zone $ZONE"
 gcloud container clusters create workshop --zone=$ZONE --num-nodes=1 --machine-type="e2-micro" --release-channel="regular" --enable-autoscaling --min-nodes=1 --max-nodes=2
 
 echo "Getting credentials for the cluster"
-gcloud container clusters get-credentials workshop --region=us-central1
+gcloud container clusters get-credentials workshop --region=us-west1-a
