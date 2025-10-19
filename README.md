@@ -5,6 +5,7 @@ This repository contains everything that is needed for "Google Cloud SpeedRun: R
 ## Links
 
 - [Credits Claim](http://trygcp.dev/e/devfest-prague-2025)
+- [Docker image repository](https://hub.docker.com/r/abielak95/devfest-app)
 
 ## Useful commands
 - `git clone https://github.com/agnieszka95/deploying-gke-cluster-on-gcp.git` - clones the repository
