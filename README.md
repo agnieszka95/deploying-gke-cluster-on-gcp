@@ -12,6 +12,6 @@ This repository contains everything that is needed for "Google Cloud SpeedRun: R
 - `chmod +x ./deploying-gke-cluster-on-gcp/00_setup/provision.sh` - make file executable
 - `./deploying-gke-cluster-on-gcp/00_setup/provision.sh` - runs projects provisioning
 - `./01_deployment/deployment.yaml` - GKE deployment
-- `kubectl touch -f deployment.yaml` - create deployment
+- `kubectl apply -f deployment.yaml` - create deployment
 - `kubectl get pods` - lists pods on Kubernetes
 - `kubectl get deployment` - lists deployments on Kubernetes 
